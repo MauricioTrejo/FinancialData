@@ -19,7 +19,7 @@ class Stock:
         logging.basicConfig(level=logging.INFO)
         self.logger = logging.getLogger(__name__)
     
-    def get_company_profile(self, symbol: list) -> pd.DataFrame:
+    def get_company_profile(self) -> pd.DataFrame:
         """
         Retrieves company profile data for a specified symbol.
         
