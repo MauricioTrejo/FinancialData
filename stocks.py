@@ -32,7 +32,7 @@ class Stock:
         # Creating an empty DataFrame to store the data
         companies_df = pd.DataFrame()
 
-        for stock_symbol in symbol:
+        for stock_symbol in self.symbol_list:
             # Construct the API URL
             url = f'https://financialmodelingprep.com/api/v3/profile/{stock_symbol}?apikey={self.api_key}'
         
